@@ -1,8 +1,8 @@
 {
-  "name": "redux-training",
+  "name": "redux-toolkit-training",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Toma1402.github.io/redux-training/",
+  "homepage": "https://Toma1402.github.io/redux-toolkit-training/",
   "dependencies": {
     "@redux-devtools/extension": "^3.2.5",
     "@testing-library/jest-dom": "^5.16.3",
