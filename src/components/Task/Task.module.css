@@ -1,15 +1,15 @@
-import styled from 'styled-components';
-
-export const TaskField = styled.div`
+.wrapper {
   display: flex;
   align-items: center;
   gap: 12px;
   padding: 8px 0;
-`;
-export const TaskTitle = styled.p`
+}
+
+.text {
   flex-grow: 1;
-`;
-export const TaskBtn = styled.button`
+}
+
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,16 +22,18 @@ export const TaskBtn = styled.button`
   background-color: transparent;
   cursor: pointer;
   color: #f44336;
+}
 
-  &:hover {
-    background-color: #e2e5e8;
-  }
-  &:active {
-    background-color: #bdbdbd;
-  }
-`;
-export const TaskCheck = styled.input`
+.btn:hover {
+  background-color: #e2e5e8;
+}
+
+.btn:active {
+  background-color: #bdbdbd;
+}
+
+.checkbox {
   width: 24px;
   height: 24px;
   cursor: pointer;
-`;
+}

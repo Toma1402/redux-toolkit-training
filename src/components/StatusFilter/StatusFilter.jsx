@@ -1,9 +1,9 @@
-import { Button } from 'components/Button/Button';
-import { BtnList } from './StatusFilter.styled';
 import { useSelector, useDispatch } from 'react-redux';
+import { Button } from 'components/Button/Button';
 import { statusFilters } from 'redux/constants';
 import { getStatusFilter } from 'redux/selectors';
-import { setStatusFilter } from 'redux/actions';
+import { setStatusFilter } from 'redux/filterSlice';
+import css from './StatusFilter.module.css';
 
 export const StatusFilter = () => {
   const dispatch = useDispatch();
@@ -12,7 +12,7 @@ export const StatusFilter = () => {
   const handleFilterChange = filter => dispatch(setStatusFilter(filter));
 
   return (
-    <BtnList>
+    <div className={css.wrapper}>
       <Button
         selected={filter === statusFilters.all}
         onClick={() => handleFilterChange(statusFilters.all)}
@@ -31,6 +31,6 @@ export const StatusFilter = () => {
       >
         Completed
       </Button>
-    </BtnList>
+    </div>
   );
 };
